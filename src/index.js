@@ -1,0 +1,10 @@
+import { convertCurrency } from './js/api-service';
+import formHandler from './js/formHandler';
+import addIncomingField from './js/addIncomingField';
+import formHandler from './js/formHandler';
+import getCountryCurrencies from './js/getCountryCurrencies';
+import renderCountryCurrencies from './js/renderCountryCurrencies';
+const formEl = document.querySelector('.form');
+const { currencyFrom, amount, currencyTo, addField } = formEl.elements;
+console.log('currencyFrom->', currencyFrom);
+addField.addEventListener('click', addIncomingField);
