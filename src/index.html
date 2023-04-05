@@ -9,15 +9,20 @@
   </head>
   <body>
     <form class="form">
-      <div class="inputCurrencyFields">
+      <button type="button" name="addField" class="form__button">
+        Add incominc currency field
+      </button>
+      <div class="incoming-wrapper inputCurrencyFields">
         <label for="currency-from">Incoming currency:</label>
         <select id="currency-from" name="currencyFrom" required></select>
         <label for="amount"></label>
         <input type="number" name="amount" class="amount" />
       </div>
-      <button type="button" name="addField">+</button>
+
       <label for="">Outcoming currency:</label>
       <select name="currencyTo" id="currency-to"></select>
+      <button type="button">Calculate!</button>
+      <p></p>
     </form>
   </body>
 </html>

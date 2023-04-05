@@ -20,3 +20,11 @@ export function convertCurrency(inputCurrency, outputCurrency, amount) {
     return response.json();
   });
 }
+const COUNTRY_CODES_URL = 'https://openexchangerates.org/api/currencies.json';
+
+export function getCountryCurrencies() {
+  return fetch(COUNTRY_CODES_URL)
+    .then(response => response.json())
+
+    .catch(error => console.log(error));
+}
